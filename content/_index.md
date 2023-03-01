@@ -10,7 +10,8 @@ Welcome to the [gohugo](https://gohugo.io/) template to create rich content [aca
 ## Members
 
 * Sergio Camilo Espinosa (sespinosab) [sespinosab@unal.edu.co](mailto:sespinosab@unal.edu.co)
-* Fredy Andres Rosero (FredyRosero) [faroseroc@unal.edu.co](mailto:sespinosab@unal.edu.co)
+* Fredy Andres Rosero (FredyRosero) [faroseroc@unal.edu.co](mailto:faroseroc@unal.edu.co)
+* Harold Velazco(havelazcoay) [havelazcoay@unal.edu.co] (mailto:havelazcoay@unal.edu.co)
 
 ### Remark
 
