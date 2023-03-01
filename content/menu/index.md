@@ -10,5 +10,4 @@ headless: true
 - [Katex]({{< relref "/docs/shortcodes/katex" >}})
 - [Mermaid]({{< relref "/docs/shortcodes/mermaid" >}})
 - [Tabs]({{< relref "/docs/shortcodes/tabs" >}})
-- [Miembros]({{< relref "/docs/shortcodes/p5" >}})
 <br />
