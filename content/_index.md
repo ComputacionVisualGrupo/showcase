@@ -9,6 +9,8 @@ Welcome to the [gohugo](https://gohugo.io/) template to create rich content [aca
 
 ## Hacking
 
+Prueba de edición
+
 Create a github [user account](https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account) or [organization](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/creating-a-new-organization-from-scratch), and install [git](https://git-scm.com/) and the [gohugo](https://gohugo.io/) [static site generator](https://jamstack.org/generators/) then:
 
 1. Create a new repo [from this template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template#creating-a-repository-from-a-template) into your user account or organization. **Don't rename the repo but leave it as 'showcase'**.
