@@ -1,9 +1,10 @@
 ---
-layout: shortcodes/P5-div
 ---
 
 # P5 Hello world!
 
-Init file
+P5 iframe 
+{{< p5-iframe sketch="/showcase/sketches/colors.js" width="725" height="425" >}
 
-{{< p5-iframe sketch="/showcase/sketches/colors.js" width="725" height="425 >}}
+P5 div
+{{< p5-div sketch="/showcase/sketches/scintillating.js" >}}
