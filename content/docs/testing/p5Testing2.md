@@ -18,9 +18,9 @@ const s = ( sketch ) => {
     sketch.rect(x,y,50,50);
   };
 };
+}
+{{< /p5-instance-div >}} 
 
-let myp5 = new p5(s); 
- 
- {{< p5-div ver="1.5.0" sketch="/path/to/sketch.js" lib1="https://cdntolib1/lib1.js" >}}
+
 
 Fin.
