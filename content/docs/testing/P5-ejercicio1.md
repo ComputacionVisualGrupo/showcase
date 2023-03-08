@@ -16,7 +16,7 @@ codigo de prueba
     if (!mouseIsPressed) {
       strokeWeight(0);
       stroke(0);
-      fill(255, 140, 0);
+      fill(0, 0, 0);
       rect(0, 0, 281, 281);
       rect(318, 0, 281, 281);
       rect(0, 318, 281, 281);
@@ -29,7 +29,7 @@ codigo de prueba
     angle += speed;
     strokeWeight(0);
     stroke(0);
-    fill(0, 0, 255);
+    fill(255, 0, 0);
     translate(width / 2, height / 2);
     rotate(angle);
     rect(-187.5, -187.5, 375, 375);
