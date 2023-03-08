@@ -1,3 +1,5 @@
+// took from here: https://github.com/VisualComputing/Cognitive/blob/gh-pages/sketches/scintillating_grid.js
+
 new p5((p) => {
   p.setup = function () {
     p.createCanvas(400, 400);
@@ -32,4 +34,4 @@ new p5((p) => {
       }
     }
   };
-}, "holamundo");
+}, "scintillating");
