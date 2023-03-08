@@ -2,10 +2,10 @@
 
 Este es otra prueba con código de prueba:
 
- {{< p5-iframe ver="1.5.0" sketch="/path/to/sketch.js"width="800" height="600" >}}
+ 
  
  const s = ( sketch ) => {
-
+  {{< p5-iframe ver="1.5.0" sketch="/path/to/sketch.js"width="800" height="600" >}}
 
   let x = 100;
   let y = 100;
