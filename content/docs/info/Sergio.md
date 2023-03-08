@@ -1,4 +1,4 @@
-![SergioEspinosa](https://github.com/sespinosab.png)
+![SergioEspinosa](https://github.com/sespinosab.png$size=200)
 ## Sergio Camilo Espinosa Botero
 ### sespinosab
 ### sespinosab@unal.edu.co
