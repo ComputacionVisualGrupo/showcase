@@ -35,6 +35,10 @@ const s = ( sketch ) => {
 let myp5 = new p5(s);
 {{< /p5-instance-div >}}
 
+# P5-iframe `colors.js`
+
+{{< p5-iframe sketch="/showcase/sketches/colors.js" width="725" height="425" >}}
+
 # Conclusiones
 
 Fin.
