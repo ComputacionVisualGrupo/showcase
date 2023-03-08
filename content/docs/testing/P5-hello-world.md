@@ -1,8 +1,14 @@
 # P5 Hello world!
 
-{{< button href="https://github.com/alex-shpak/hugo-book" >}}Contribute{{< /button >}}
-
+Este es uns prueba de P5 utilizando un sketch preexistente:
 
 {{< p5-div sketch="/showcase/sketches/scintillating.js" >}}
+
+
+Este es otra prueba con código de prueba:
+
+{{< p5-div sketch="/showcase/sketches/helloworld.js" >}}
+
+
 
 
