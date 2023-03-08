@@ -9,9 +9,9 @@ Este es otra prueba con código de prueba:
 
 {{< p5-div sketch="/showcase/sketches/scintillating.js" >}}
 
-# P5-div `helloworld.js`
+# P5-div `scintillating.js`
 
-{{< p5-div sketch="/showcase/sketches/helloworld.js" >}}
+{{< p5-div sketch="/showcase/sketches/scintillating.js" >}}
 
 # P5-instance-div
 
