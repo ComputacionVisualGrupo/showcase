@@ -12,14 +12,23 @@ Este es otra prueba con código de prueba:
 # P5-instance-div
 
 {{< p5-instance-div id="hola-mundo" >}}
-    function setup() {
-    createCanvas(400, 400);
-    }
+const s = ( sketch ) => {
 
-    function draw() {
-    background(220);
-    ellipse(50,50,80,80);
-    }
+  let x = 100;
+  let y = 100;
+
+  sketch.setup = () => {
+    sketch.createCanvas(200, 200);
+  };
+
+  sketch.draw = () => {
+    sketch.background(0);
+    sketch.fill(255);
+    sketch.rect(x,y,50,50);
+  };
+};
+
+let myp5 = new p5(s);
 {{< /p5-instance-div >}}
 
 # Conclusiones
