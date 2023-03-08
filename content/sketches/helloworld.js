@@ -1,6 +1,17 @@
-textSize(32);
-text('word', 10, 30);
-fill(0, 102, 153);
-text('word', 10, 60);
-fill(0, 102, 153, 51);
-text('word', 10, 90);
+let inconsolata;
+function preload() {
+  inconsolata = loadFont('assets/inconsolata.otf');
+}
+function setup() {
+  createCanvas(100, 100, WEBGL);
+  textFont(inconsolata);
+  textSize(width / 3);
+  textAlign(CENTER, CENTER);
+}
+function draw() {
+  background(0);
+  let time = millis();
+  rotateX(time / 1000);
+  rotateZ(time / 1234);
+  text('p5.js', 0, 0);
+}
