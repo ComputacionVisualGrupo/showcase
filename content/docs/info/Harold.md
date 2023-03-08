@@ -1,6 +1,5 @@
 ![Harold Velazco](https://github.com/havelazcoay.png?size=200)
-## Harold Velazco 
-## 
+# Harold Velazco 
 [havelazcoay@unal.edu.co](mailto:havelazcoay@unal.edu.co) - 
 [HaroldVelazco.github.io](https://havelazcoay.github.io/) -
 [@HaroldVelazco](https://github.com/havelazcoay)
