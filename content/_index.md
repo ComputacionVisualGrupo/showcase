@@ -11,4 +11,4 @@ Welcome to our Visual Computing showcase
 
 * Sergio Camilo Espinosa
 * Fredy Andres Rosero 
-* Harold Velazco(havelazcoay)
+* Harold Velazco
