@@ -6,7 +6,7 @@ Este es otra prueba con código de prueba:
 # P5-iframe `holamundo.js`
 Es el mnismo `colors.js`:
 
-{{< p5-iframe sketch="/showcase/sketches/colors.js" width="725" height="425" >}}
+{{< p5-iframe sketch="/showcase/sketches/helloworld.js" width="725" height="425" >}}
 
 # Conclusiones
 
