@@ -1,33 +1,55 @@
-// instance mode of: 
-// https://p5js.org/examples/color-relativity.html
+let font,
+  fontsize = 32;
 
-new p5((p) => {
-  let a, b, c, d, e;
+function preload() {
+  // Ensure the .ttf or .otf font stored in the assets directory
+  // is loaded before setup() and draw() are called
+}
 
-  p.setup = function () {
-    p.createCanvas(700, 400);
-    p.noStroke();
-    a = p.color(165, 167, 20);
-    b = p.color(77, 86, 59);
-    c = p.color(42, 106, 105);
-    d = p.color(165, 89, 20);
-    e = p.color(146, 150, 127);
-    p.noLoop();
-  }
+function setup() {
+  createCanvas(710, 400);
 
-  p.draw = function () {
-    drawBand(a, b, c, d, e, 0, p.width / 128);
-    drawBand(c, a, d, b, e, p.height / 2, p.width / 128);
-  }
+  // Set text characteristics
+  textSize(fontsize);
+  textAlign(CENTER, CENTER);
+}
 
-  function drawBand(v, w, x, y, z, ypos, barWidth) {
-    let num = 5;
-    let colorOrder = [v, w, x, y, z];
-    for (let i = 0; i < p.width; i += barWidth * num) {
-      for (let j = 0; j < num; j++) {
-        p.fill(colorOrder[j]);
-        p.rect(i + j * barWidth, ypos, barWidth, p.height / 2);
+function draw() {
+  background(160);
+
+  // Set the gap between letters and the left and top margin
+  let gap = 52;
+  let margin = 10;
+  translate(margin * 4, margin * 4);
+
+  // Set the counter to start at the character you want
+  // in this case 35, which is the # symbol
+  let counter = 35;
+
+  // Loop as long as there is space on the canvas
+  for (y = 0; y < height - gap; y += gap) {
+    for (x = 0; x < width - gap; x += gap) {
+      // Use the counter to retrieve individual letters by their Unicode number
+      let letter = char(counter);
+
+      // Add different color to the vowels and other characters
+      if (
+        letter === 'A' ||
+        letter === 'E' ||
+        letter === 'I' ||
+        letter === 'O' ||
+        letter === 'U'
+      ) {
+        fill('#ed225d');
+      } else {
+        fill(255);
       }
+
+      // Draw the letter to the screen
+      text(letter, x, y);
+
+      // Increment the counter
+      counter++;
     }
   }
-}, "colors");
+}
