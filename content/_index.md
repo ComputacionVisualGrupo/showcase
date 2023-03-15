@@ -5,7 +5,7 @@ type: docs
 
 # Showcase
 
-Welcome to our Visual Computing show case
+Welcome to our Visual Computing showcase
 
 ## Members
 
