@@ -4,7 +4,7 @@ var labelSet = false;
 let sel;
 
 function preload() {
-  img = loadImage("Japanese woodblock print of a karate practitioner.png");
+  img = loadImage("/showcase/sketches/Japanese woodblock print of a karate practitioner.png");
 }
 
 function setup() {
