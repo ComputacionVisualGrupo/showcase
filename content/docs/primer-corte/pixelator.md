@@ -6,7 +6,7 @@ Este es otra prueba con código de prueba:
 
 
 {{< p5-iframe sketch="/showcase/content/sketches/pixelator.js" width="725" height="425" >}}
-{{< p5-iframe sketch="/showcase/content/sketches/pixelator.js" width="725" height="425" >}}
+
 
 
 
