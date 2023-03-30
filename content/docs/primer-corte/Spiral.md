@@ -1,1 +1,1 @@
-{{< p5-iframe sketch="/showcase/blob/main/content/docs/primer-corte/Spiral.js" width="725" height="425" >}}
+{{< p5-iframe sketch="/showcase/sketches/Spiral.js" width="600" height="600" >}}
