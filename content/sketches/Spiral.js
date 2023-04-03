@@ -65,3 +65,4 @@ function mouseReleased() {
   SPIRAL_SIZE = sizeSlider.value();
   cercania = distSlider.value();
 }
+fin
