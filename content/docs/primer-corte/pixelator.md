@@ -2,7 +2,7 @@
 
 By: Sergio Camilo Espinosa
 
-{{< p5-iframe sketch="/showcase/sketches/pixelator.js" width="500" height="550" >}}
+{{< p5-iframe sketch="/showcase/sketches/pixelator.js" width="530" height="560" >}}
 
 Este código carga una imagen y le permite al usuario cambiar entre la imagen original y una versión pixelada de la misma.
 
