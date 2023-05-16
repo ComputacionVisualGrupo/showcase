@@ -1,5 +1,5 @@
 # Extractor de colores Winsor & newton
-by [FredyRosero](/showcase/docs/info/Fredy/)
+by [FredyRosero](/showcase/docs/about/Fredy/)
 
 <img width="250px" src="https://cdn.shopify.com/s/files/1/0048/4245/5158/products/2_a0647768-69c7-4215-bc29-6fffd875b91d_1200x1200.png?v=1679960445">
 
