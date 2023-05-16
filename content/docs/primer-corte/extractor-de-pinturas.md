@@ -5,7 +5,7 @@ by [FredyRosero](/showcase/docs/info/Fredy/)
 
 Este sketch de P5 posteriza la imagen para limitar 4 colores por canal. Luego agrega el valor RGB de cada pixel sin repetir a una lista que luego aproximara a otros valores RGB que se "aproximan" a los colores de las pinturas de óleo Winsor & newton "Artists' Oil Colour" extraidos de <https://color-term.com/winsornewton-colors/>
 
-{{< p5-global-iframe id="breath" width="600" height="900"  >}}
+{{< p5-global-iframe id="breath" width="1000" height="450"  >}}
 const imgURL = "/showcase/sketches/lenna.png"
 const cantidadColores = 4;
 const anchoImg = 400;
@@ -14,7 +14,7 @@ let img;
 let imgCopy;
 let coloresDict;
 let rgbValues = new DeepSet();
-let colores = []
+let colores = new DeepSet();
 let remplazoColores = []
 let altoImg
 let slider;
@@ -31,24 +31,24 @@ function preload() {
 
 function setup() {
   // Definimos el tamaño del lienzo de P5
-  createCanvas(600, 900);
+  createCanvas(1000, 450);
 
   altoImg = (anchoImg / img.width) * img.height; 
-  image(img, 0, 0, anchoImg, altoImg);
+  image(img, anchoImg, 0, anchoImg, altoImg);
   let c = get();
   
   loadPixels(); 
 
   calcularColoresWinsor();
-  image(c, 0, altoImg);  
+  image(c, -anchoImg, 0);  
 }
 
 
 function dibujarColores() {
-  let boxWidth = width - anchoImg;
-  let boxHeight = 2 * altoImg / colores.length;
+  let boxWidth = width - anchoImg*2;
+  let boxHeight = altoImg / colores.length;
 
-  let x = anchoImg //despues de la imagen
+  let x = anchoImg*2 //despues de la imagen
   for (let i = 0; i < colores.length; i++) {
     let rgbValues = extraerRGBdeTexto(colores[i]["rgb"]);
     
@@ -63,7 +63,7 @@ function dibujarColores() {
 
     fill(0);
     textAlign(CENTER, CENTER);
-    textSize(14);
+    textSize(12);
     text(colores[i]["nombre"], x + boxWidth / 2, y + boxHeight / 2);        
   }
 }
@@ -93,18 +93,39 @@ function extraerColores() {
       let b = pixels[index + 2]; // valor Blue 
       let rgbValue = { r: r, g: g, b: b };
       rgbValues.add(rgbValue); // Agregar valores a la lista
-
     }
   }
   rgbValues = Array.from(rgbValues);
+  const uniqueMap = {};
+  const uniqueTriples = rgbValues.filter(triple => {
+    const key = JSON.stringify(triple);
+    console.log(key)
+    if (!uniqueMap[key]) {
+      uniqueMap[key] = true;
+      return true;
+    }
+    return false;
+  });
   console.log('Valores RGB encontrados:', rgbValues);
-  colores=[]
+  colores = new DeepSet();
   remplazoColores=[]
   rgbValues.forEach(rgbValue => {
     colorCercano = encontrarColorMasCercano(coloresDict, rgbValue);
-    colores.push(colorCercano)
+    colores.add(colorCercano)
     remplazoColores.push({ org: rgbValue, rem: hexToRgb(colorCercano.hex) })
   });
+  colores = Array.from(colores);
+  colores.sort((a, b) => {
+    aHue = getHueFromHex(a.hex)
+    bHue = getHueFromHex(b.hex)
+    if (aHue< bHue) {
+      return -1;
+    }
+    if (aHue  > bHue) {
+      return 1;
+    }
+    return 0;    
+    });
   console.log("Nombres de los colores encontrados:", colores);
   console.log("Remplazo de colores:", remplazoColores); 
 }
@@ -171,6 +192,45 @@ function extraerRGBdeTexto(rgbString) {
   b = parseInt(b);
   return { r, g, b };
 }
+
+function getHueFromHex(hexColor) {
+  // Remove the "#" symbol if present
+  hexColor = hexColor.replace("#", "");
+
+  // Convert the hex color to RGB values
+  const r = parseInt(hexColor.substring(0, 2), 16) / 255;
+  const g = parseInt(hexColor.substring(2, 4), 16) / 255;
+  const b = parseInt(hexColor.substring(4, 6), 16) / 255;
+
+  // Find the maximum and minimum color component values
+  const max = Math.max(r, g, b);
+  const min = Math.min(r, g, b);
+
+  // Calculate the hue value
+  let hue;
+  if (max === min) {
+    hue = 0;
+  } else {
+    const diff = max - min;
+    switch (max) {
+      case r:
+        hue = ((g - b) / diff) % 6;
+        break;
+      case g:
+        hue = (b - r) / diff + 2;
+        break;
+      case b:
+        hue = (r - g) / diff + 4;
+        break;
+    }
+    hue *= 60;
+    if (hue < 0) {
+      hue += 360;
+    }
+  }
+  return hue;
+}
+
 {{< /p5-global-iframe >}}
 
 El diccionario de colores `/showcase/sketches/colores.json` se generó con el siguiente scrapper de python:
