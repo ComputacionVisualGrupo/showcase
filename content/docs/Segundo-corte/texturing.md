@@ -9,7 +9,7 @@ Además, hay un botón que permite invertir la orientación del cuadrilátero, l
 
 En resumen, este programa proporciona una experiencia interactiva donde se pueden ajustar valores y cambiar la apariencia de un objeto dibujado en un lienzo 3D utilizando un shader personalizado.
 
-{{< p5-iframe sketch="/showcase/sketches/texturing/uv.js" width="500" height="500" >}}
+{{< p5-iframe sketch="/showcase/sketches/texturing/uv.js" width="525" height="525" >}}
 
 Se carga un shader personalizado llamado 'uv.frag' que se utilizará para el dibujo en el lienzo.
 Se configura el lienzo de dibujo en 3D utilizando la función createCanvas() de p5.js.
