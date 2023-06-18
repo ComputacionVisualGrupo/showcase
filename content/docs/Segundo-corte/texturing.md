@@ -23,4 +23,4 @@ En resumen, este programa proporciona una experiencia interactiva donde se puede
 
 ## Mapeo de Texturas
 El mapeo de texturas es un proceso de diseño gráfico en el que una superficie bidimensional (2D), denominada mapa de texturas, se "envuelve" alrededor de un objeto tridimensional (3D). Así, el objeto tridimensional adquiere una textura superficial similar a la de la superficie bidimensional. Oprime en el siguiente ejemplo para correrlo!
-{{< p5-iframe sketch="/showcase/sketches/texturing/video_cube.js" lib1="/showcase/sketches/libraries/p5.easycam.js" width="500" height="500" >}}
+{{< p5-iframe sketch="/showcase/sketches/texturing/video_cube.js" lib1="/showcase/sketches/libraries/p5.easycam.js" width="525" height="525" >}}
