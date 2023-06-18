@@ -26,7 +26,7 @@ function setup() {
   
   videoCheckbox = createCheckbox('Video', false);
   videoCheckbox.changed(onVideoCheckboxChange);
-  videoCheckbox.position(20, 70);
+  videoCheckbox.position(20, 60);
   
   selMask = createSelect();
   selMask.option("Identity", 0);
