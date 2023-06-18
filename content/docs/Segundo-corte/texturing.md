@@ -11,12 +11,12 @@ En resumen, este programa proporciona una experiencia interactiva donde se puede
 
 {{< p5-iframe sketch="/showcase/sketches/texturing/uv.js" width="525" height="525" >}}
 
-Se carga un shader personalizado llamado 'uv.frag' que se utilizará para el dibujo en el lienzo.
-Se configura el lienzo de dibujo en 3D utilizando la función createCanvas() de p5.js.
-Se establece el shader 'uvShader' utilizando la función shader() de p5.js.
-Se crean un control deslizante y un botón para interactuar con el programa.
-En el bucle de dibujo, se actualiza el valor uniforme 'x' en el shader según el valor del control deslizante.
-Se dibuja un cuadrilátero en el lienzo 3D sin contorno, utilizando las coordenadas proporcionadas para definir su posición y tamaño.
-Al hacer clic en el botón, se invierte la orientación del cuadrilátero.
-El lienzo se actualiza para reflejar los cambios.
-En resumen, este código crea un lienzo interactivo en 3D donde se puede ajustar una variable 'x' mediante un control deslizante y cambiar la orientación del cuadrilátero al hacer clic en un botón. Utiliza un shader personalizado para el dibujo en el lienzo.
+* Se carga un shader personalizado llamado 'uv.frag' que se utilizará para el dibujo en el lienzo.
+* Se configura el lienzo de dibujo en 3D utilizando la función createCanvas() de p5.js.
+* Se establece el shader 'uvShader' utilizando la función shader() de p5.js.
+* Se crean un control deslizante y un botón para interactuar con el programa.
+* En el bucle de dibujo, se actualiza el valor uniforme 'x' en el shader según el valor del control deslizante.
+* Se dibuja un cuadrilátero en el lienzo 3D sin contorno, utilizando las coordenadas proporcionadas para definir su posición y tamaño.
+* Al hacer clic en el botón, se invierte la orientación del cuadrilátero.
+* El lienzo se actualiza para reflejar los cambios.
+* En resumen, este código crea un lienzo interactivo en 3D donde se puede ajustar una variable 'x' mediante un control deslizante y cambiar la orientación del cuadrilátero al hacer clic en un botón. Utiliza un shader personalizado para el dibujo en el lienzo.
