@@ -4,9 +4,9 @@ let img_src;
 
 function preload(){
   
-  lumaShader = readShader('sketches/texturing/shaders/luma.frag',
+  lumaShader = readShader('/showcase/sketches/texturing/shaders/luma.frag',
     { varyings: Tree.texcoords2 });
-  maskShader = readShader('sketches/texturing/shaders/mask.frag',
+  maskShader = readShader('/showcase/sketches/texturing/shaders/mask.frag',
     { varyings: Tree.texcoords2});
   img_src = loadImage('sketches/Bogota_Skyline.jpg');
   src = img_src;
