@@ -4,11 +4,11 @@ let img_src;
 
 function preload(){
   
-  lumaShader = readShader('../shaders/luma.frag',
+  lumaShader = readShader('sketches/texturing/shaders/luma.frag',
     { varyings: Tree.texcoords2 });
-  maskShader = readShader('../shaders/mask.frag',
+  maskShader = readShader('sketches/texturing/shaders/mask.frag',
     { varyings: Tree.texcoords2});
-  img_src = loadImage('../../Bogota_Skyline.jpg');
+  img_src = loadImage('showcase/content/sketches/Bogota_Skyline.jpg');
   src = img_src;
   
 }
@@ -21,7 +21,7 @@ function setup() {
   textureMode(NORMAL);
   shader(lumaShader);
   
-  video = createVideo(['../../onagerShot.mp4']);
+  video = createVideo(['showcase/content/sketches/onagerShot.mp4']);
   video.hide();
   
   videoCheckbox = createCheckbox('Video', false);
