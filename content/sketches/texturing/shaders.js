@@ -8,7 +8,7 @@ function preload(){
     { varyings: Tree.texcoords2 });
   maskShader = readShader('../shaders/mask.frag',
     { varyings: Tree.texcoords2});
-  img_src = loadImage('Bogota_Skyline.jpg');
+  img_src = loadImage('../../Bogota_Skyline.jpg');
   src = img_src;
   
 }
@@ -21,7 +21,7 @@ function setup() {
   textureMode(NORMAL);
   shader(lumaShader);
   
-  video = createVideo(['onagerShot.mp4']);
+  video = createVideo(['../../onagerShot.mp4']);
   video.hide();
   
   videoCheckbox = createCheckbox('Video', false);
