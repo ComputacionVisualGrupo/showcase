@@ -6,7 +6,7 @@ let w;
 let h;
 
 function preload() {
-  uvShader = readShader('/showcase/sketches/Texturing/uv.frag',
+  uvShader = readShader('/showcase/sketches/texturing/uv.frag',
                   { matrices: Tree.pmvMatrix, varyings: Tree.texcoords2 });
 }
 
