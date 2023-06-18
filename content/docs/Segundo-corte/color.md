@@ -9,5 +9,5 @@ El programa utiliza un shader personalizado para realizar la mezcla de colores. 
 
 En resumen, el programa proporciona una manera interactiva de explorar cómo se combinan los colores utilizando diferentes modos de mezcla y ajustes de brillo. Permite al usuario experimentar y visualizar los resultados de la mezcla de colores en tiempo real.
 
-{{< p5-iframe sketch="/showcase/sketches/colorBlend.js" width="500" height="500" >}}
+{{< p5-iframe sketch="/showcase/sketches/colorBlend.js" width="550" height="550" >}}
 
