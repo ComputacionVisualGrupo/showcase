@@ -21,4 +21,6 @@ En resumen, este programa proporciona una experiencia interactiva donde se puede
 * El lienzo se actualiza para reflejar los cambios.
 * En resumen, este código crea un lienzo interactivo en 3D donde se puede ajustar una variable 'x' mediante un control deslizante y cambiar la orientación del cuadrilátero al hacer clic en un botón. Utiliza un shader personalizado para el dibujo en el lienzo.
 
+## Mapeo de Texturas
+El mapeo de texturas es un proceso de diseño gráfico en el que una superficie bidimensional (2D), denominada mapa de texturas, se "envuelve" alrededor de un objeto tridimensional (3D). Así, el objeto tridimensional adquiere una textura superficial similar a la de la superficie bidimensional. Oprime en el siguiente ejemplo para correrlo!
 {{< p5-iframe sketch="/showcase/sketches/texturing/video_cube.js" lib1="/showcase/sketches/libraries/p5.easycam.js" width="500" height="500" >}}
