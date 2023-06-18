@@ -9,7 +9,7 @@ function preload() {
   // leads to the same gl_Position result.
   // Interpolate only texture coordinates (i.e., varyings: Tree.texcoords2).
   // see: https://github.com/VisualComputing/p5.treegl#handling
-  uvShader = readShader('/VisualComputing2022_2/sketches/Taller3/Texturing/uv_alpha.frag',
+  uvShader = readShader('/showcase/sketches/texturing/uv_alpha.frag',
               { matrices: Tree.pmvMatrix, varyings: Tree.texcoords2 });
 }
 
