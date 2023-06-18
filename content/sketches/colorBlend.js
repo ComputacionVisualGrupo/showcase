@@ -29,7 +29,7 @@ let blendingModeSelection;
 
 function preload() {
   blendShader = readShader(
-    '/VisualComputing2022_2/sketches/Taller3/Coloring/colorBlend.frag', 
+    '/showcase/sketches/colorBlend.frag', 
     { matrices: Tree.NONE, varyings: Tree.NONE }
   );
 }
