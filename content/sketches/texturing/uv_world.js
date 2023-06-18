@@ -3,7 +3,7 @@ let uvShader;
 let slider;
 
 function preload() {
-  uvShader = readShader('/VisualComputing2022_2/sketches/Taller3/Texturing/uv.frag',
+  uvShader = readShader('/showcase/sketches/texturing/uv.frag',
           { precision: Tree.highp,matrices: Tree.pmvMatrix, varyings: Tree.texcoords2 });
 }
 
