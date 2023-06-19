@@ -29,7 +29,7 @@ function setup() {
   videoCheckbox.position(20, 60);
   
   selMask = createSelect();
-  selMask.option("Identity", 0);
+  selMask.option("Original", 0);
   selMask.option("Luma", 1);
   selMask.option("Ridges", 2);
   selMask.changed(changeMask);
