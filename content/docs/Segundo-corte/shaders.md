@@ -9,9 +9,9 @@ Los ridges se encuentran usando una matriz de convolución 3x3, como la siguient
 -1.0,  4.0, -1.0,
 0.0, -1.0,  0.0]
 
-Esta matriz es llamada "Laplacian of Gaussian" (LoG), un kernel comunmente usado para la detección de ridges, ya que el centro al tener un peso alto (4.0) y los valores de alrededor uno menor (-1.0), se puede identificar las diferencias de en intensidad entre un píxel central y sus vecinos, lo que permite identificar las esquinas en la imagen, al pasar el kernel por cada pixel y su correspondiente vecindad.
+Esta matriz es llamada "Laplacian of Gaussian" (LoG), un kernel comunmente usado para la detección de ridges, ya que el centro al tener un peso alto (4.0) y los valores de alrededor tener uno menor (-1.0), se puede identificar las diferencias de intensidad entre un píxel central y sus vecinos, lo que permite identificar las esquinas en la imagen al pasar el kernel por cada píxel y su correspondiente vecindad.
 
-Para la detección de ridges en el vídeo se cambió la matriz por la siguiente:
+Para la detección de ridges en el vídeo se cambió la matriz anterior por la siguiente:
 [0.0,  1.0,  0.0,
  1.0, -4.0,  1.0,
 0.0,  1.0,  0.0]
