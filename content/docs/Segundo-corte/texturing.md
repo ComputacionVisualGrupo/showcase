@@ -27,4 +27,14 @@ El mapeo de texturas es un proceso de diseño gráfico en el que una superficie 
 
 ## Texturas procedurales
 
+Una imagen procedural es una imagen generada de manera algorítmica en lugar de ser creada manualmente o capturada de la realidad. En lugar de utilizar una imagen o fotografía existente, se emplean fórmulas matemáticas y algoritmos para crear una imagen digitalmente.
+
+La base de una imagen procedural es un conjunto de reglas, ecuaciones o algoritmos que definen cómo se generan los píxeles y las características de la imagen. Estas reglas pueden abarcar desde patrones simples hasta detalles complejos, y pueden controlar elementos como colores, formas, texturas, iluminación y efectos especiales.
+
+La ventaja de las imágenes procedurales radica en su capacidad para ser generadas en tiempo real y su potencial para crear variaciones infinitas de una misma imagen base. Al utilizar algoritmos y fórmulas, se pueden ajustar los parámetros para obtener diferentes resultados visuales sin necesidad de almacenar múltiples imágenes en la memoria.
+
+Las imágenes procedurales se utilizan en una amplia gama de aplicaciones, como gráficos por computadora, generación de terrenos, efectos visuales en películas y videojuegos, diseño de texturas, arte generativo y simulaciones científicas.
+
+En resumen, una imagen procedural es una imagen generada mediante algoritmos y fórmulas matemáticas en lugar de utilizar imágenes o fotografías existentes. La base de una imagen procedural es el conjunto de reglas y algoritmos que definen su apariencia y características visuales.
+
 {{< p5-iframe sketch="/showcase/sketches/texturing/truchet_tiles.js" lib1="/VisualComputing2022_2/sketches/libraries/p5.easycam.js" width="425" height="425" >}}
